@@ -113,4 +113,3 @@ Tillåten nedtid: 100 % - 99,7 % = 0,3 %
 Svar: API:et får vara otillgängligt i högst 129,6 minuter under 30 dagar.
 
 ## 4. Skillnad mot ett annat par
-
