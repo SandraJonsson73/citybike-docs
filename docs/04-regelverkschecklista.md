@@ -128,6 +128,17 @@ Nivå och testtyp: Integrationstest, funktionellt.
 Resultat som ska sparas: Testdatum, API-version, användarroll, HTTP-statuskod, avidentifierat API-svar samt om testet blev godkänt eller underkänt.
 Teknisk dokumentation: Versionshanterad testrapport och avidentifierade API-loggar sparas i företagets dokumentationssystem, kopplade till den testade API-versionen.
 
+## Kontrollfrågor
+
+  1. Varför är CityBike tillverkare av styrenheten, trots att en underleverantör har byggt den?
+  Svar: CityBike räknas som tillverkare eftersom styrenheten släpps ut på marknaden under företagets eget varumärke. Därför ansvarar CityBike för att produkten uppfyller tillämpliga EU-krav, även om den har tillverkats av en underleverantör.
+
+  2. Vad händer med behovet av testning när CityBike släpper en ny firmwareversion?
+  Svar: När CityBike släpper en ny firmwareversion behöver systemet testas igen. Regressionstester används för att kontrollera att uppdateringen inte har påverkat befintliga funktioner eller säkerheten negativt.
+
+  3. Vilket fält i spårbarhetskedjan gör att en inspektör kan lita på ett gammalt testresultat flera år senare?
+  Svar: Fältet Resultat som ska sparas är viktigt eftersom det visar när testet genomfördes, vilken programversion som testades och vilka resultat som uppmättes. Tillsammans med den tekniska dokumentationen gör det att testresultatet kan kontrolleras i efterhand.
+
 /////////////////////////////////////////////////////
 
 ## Tillverkaransvar
