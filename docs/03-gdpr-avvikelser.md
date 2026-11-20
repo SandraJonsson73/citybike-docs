@@ -108,3 +108,20 @@ Motivering: Personuppgifter om 2 100 kunder har skickats till en obehörig motta
 Åtgärder för att förhindra upprepning:
   -Införa en kontroll av mottagarens e-postadress innan filer med personuppgifter skickas externt.
   -Begränsa behörigheten så att endast behörig personal kan exportera kunduppgifter.
+
+## Kontrollfrågor
+
+### Fråga 1
+
+  Nämn ett giltigt skäl för att använda personnummer enligt dataskyddslagen, och förklara om det skälet gäller CityBikes registrering.
+Svar: Personnummer får användas när det finns ett tydligt behov av säker identifiering. För CityBike är det inte självklart att hela personnumret behövs eftersom åldern kan kontrolleras på andra sätt. Företaget bör därför undvika att samla in fler personuppgifter än nödvändigt.
+
+### Fråga 2
+
+  Varför räcker det inte att ändra Users.Status till Inactive när en kund vill avsluta sitt konto?
+Svar: Det räcker inte att ändra status till Inactive eftersom kundens personuppgifter fortfarande finns kvar i databasen. Enligt GDPR artikel 17 har kunden under vissa förutsättningar rätt att få sina uppgifter raderade. CityBike måste därför kunna ta bort uppgifter som inte längre behöver sparas, men får behålla sådant som måste lagras enligt lag.
+
+### Fråga 3
+
+  Vilken testnivå har ett test som kontrollerar att en kundtjänstroll inte kan se kolumnen Personnummer? Motivera.
+Svar: Testet är ett integrationstest eftersom det kontrollerar att API:et, autentiseringen och behörighetskontrollen fungerar tillsammans. En användare med kundtjänstrollen ska inte kunna få tillgång till kundernas personnummer.

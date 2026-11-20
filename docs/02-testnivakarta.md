@@ -102,13 +102,12 @@ Testtyp: Icke-funktionellt, svartlådetest.
 
 ### Fråga 1
 
-En resa på 61 sekunder debiteras 12,50 kr i stället för 15 kr. På vilken nivå hittar du felet billigast, och vilket testfall (T-nummer) ligger närmast att fånga det?
+  En resa på 61 sekunder debiteras 12,50 kr i stället för 15 kr. På vilken nivå hittar du felet billigast, och vilket testfall (T-nummer) ligger närmast att fånga det?
 
 svar: Felet hittas billigast med ett enhetstest eftersom det handlar om prisberäkningen. T1 ligger närmast eftersom det testar PriceCalculator. Ett nytt test med 61 sekunder skulle kontrollera att tiden avrundas uppåt till två minuter och att priset blir 15 kr.
 
 ### Fråga 2
 
-Vilket av testfallen T1 till T16 var svårast att placera, och mellan vilka två nivåer tvekade du?
+  Vilket av testfallen T1 till T16 var svårast att placera, och mellan vilka två nivåer tvekade du?
 
 svar: T10 var svårast att placera eftersom jag först tänkte att det var ett systemtest. Jag tvekade mellan systemtest och acceptanstest, men kom fram till att det är ett acceptanstest eftersom ekonomiansvarig granskar och godkänner kvittot.
-
