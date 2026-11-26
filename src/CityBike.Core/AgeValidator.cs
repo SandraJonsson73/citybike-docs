@@ -4,10 +4,15 @@ public class AgeValidator
 {
     public const int AdultAge = 18;
 
-    public bool IsAdult(DateOnly birthDate, DateOnly today)
-    {
-        int age = today.Year - birthDate.Year;
+public bool IsAdult(DateOnly birthDate, DateOnly today)
+{
+    int age = today.Year - birthDate.Year;
 
-        return age >= AdultAge;
+    if (today < birthDate.AddYears(age))
+    {
+        age--;
     }
+
+    return age >= AdultAge;
+}
 }
