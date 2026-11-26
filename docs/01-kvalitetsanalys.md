@@ -1,6 +1,6 @@
 # Kvalitetsanalys CityBike
 
-## 1. Observationer och egenskaper
+## 1\. Observationer och egenskaper
 
 ### K1
 
@@ -62,14 +62,14 @@ Egenskap: Flexibility
 Delegenskap: Adaptability
 Motivering: Systemet är svårt att anpassa till nya städer eftersom namn, priser och zoner är hårdkodade och kräver ändringar på flera ställen.
 
-## 2. De fyra viktigaste egenskaperna för CityBike
+## 2\. De fyra viktigaste egenskaperna för CityBike
 
 1. Security - Säkerhet: Det är viktigt att skydda kundernas personuppgifter så att obehöriga inte får tillgång till dem. I R4 delar kundtjänsten ett konto och har tillgång till alla kunduppgifter.
 2. Reliability – Tillförlitlighet: Systemet måste fungera korrekt även om det uppstår störningar. Om betalningsbegäran skickas flera gånger kan kunden bli debiterad dubbelt, vilket kan minska förtroendet för CityBike (K2, avsnitt 4).
 3. Performance efficiency – Prestanda: Systemet behöver fungera snabbt även när många använder det samtidigt. Om kartan tar för lång tid att ladda kan kunderna få svårt att hitta och boka cyklar (K1, avsnitt 3, S1)
 4. Safety - Säkerhet mot skador: Det är viktigt att cyklarna är säkra att använda. Om batteriet blir för varmt måste laddningen stoppas för att förhindra brand och andra skador (K8, avsnitt 7).
 
-## 3. Mätbara krav
+## 3\. Mätbara krav
 
 ### Krav 1: Security
 
@@ -112,4 +112,5 @@ Tillåten nedtid: 100 % - 99,7 % = 0,3 %
 43 200 × 0,003 = 129,6 minuter.
 Svar: API:et får vara otillgängligt i högst 129,6 minuter under 30 dagar.
 
-## 4. Skillnad mot ett annat par
+## 4\. Skillnad mot ett annat par
+
